@@ -2,7 +2,21 @@
 module.exports = {
   content: ["./public/**/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        primary: "#77439F",
+        secondary: "#00A3A3",
+        "primary-dark": "#B174F0",
+        "secondary-dark": "#00CABC",
+        grey: "#BBB9BD",
+        white: "#EDEDED",
+        "background-dark": "#1F0A34",
+        black: "#000000",
+      },
+      fontFamily: {
+        sans: ["El Messiri", "sans-serif"],
+      },
+    },
   },
   plugins: [],
 };
