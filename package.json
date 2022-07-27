@@ -1,0 +1,15 @@
+{
+  "name": "samiart-tailwind",
+  "version": "1.0.0",
+  "description": "SamiArt's landing page with tailwindCSS",
+  "main": "index.js",
+  "scripts": {
+    "tailwind": "tailwindcss -i ./src/styles/tailwind.css -o ./public/styles.css --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rodrigo Goitia <rodrigojgq@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "tailwindcss": "^3.1.6"
+  }
+}
