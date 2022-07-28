@@ -12,7 +12,7 @@
 @tailwind utilities;
 
 .subtitle {
-  @apply text-xl text-primary mb-4 ml-4 sm:text-2xl lg:text-3xl
+  @apply text-xl text-primary mb-4 ml-4 sm:text-2xl lg:text-3xl dark:text-primary-dark
 }
 
 .image {
@@ -35,7 +35,7 @@
 }
 
 .paragraph {
-  @apply text-sm text-black sm:text-base
+  @apply text-sm text-black sm:text-base dark:text-white
 }
 
 .social-button {
