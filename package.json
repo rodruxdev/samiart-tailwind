@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "tailwind": "tailwindcss -i ./src/styles/tailwind.css -o ./public/styles.css --watch",
+    "tailwind:minify": "tailwindcss -i ./src/styles/tailwind.css -o ./public/styles.css --minify",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Rodrigo Goitia <rodrigojgq@gmail.com>",

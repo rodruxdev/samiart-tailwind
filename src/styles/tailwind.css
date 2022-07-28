@@ -27,7 +27,7 @@
 }
 
 .small-card {
- @apply w-40 h-56 rounded border-primary border-2 flex flex-col justify-center items-center gap-5 sm:w-44 sm:h-60 sm:rounded-lg lg:rounded-2xl lg:w-48 lg:h-64
+ @apply w-40 h-56 rounded border-primary border-2 flex flex-col justify-center items-center gap-5 sm:w-44 sm:h-60 sm:rounded-lg lg:rounded-2xl lg:w-48 lg:h-64 hover:-translate-y-4 hover:duration-200 hover:ease-in-out
 }
 
 .small-card:nth-child(2n) {
@@ -39,7 +39,7 @@
 }
 
 .social-button {
-  @apply w-14 h-14 bg-primary rounded grid place-items-center sm:w-16 sm:h-16 sm:rounded-lg
+  @apply w-14 h-14 bg-primary rounded grid place-items-center sm:w-16 sm:h-16 sm:rounded-lg hover:scale-110 duration-100 ease-in-out
 }
 
 .menu-button {
