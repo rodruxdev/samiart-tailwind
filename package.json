@@ -5,12 +5,14 @@
   "main": "index.js",
   "scripts": {
     "tailwind": "tailwindcss -i ./src/styles/tailwind.css -o ./public/styles.css --watch",
-    "tailwind:minify": "tailwindcss -i ./src/styles/tailwind.css -o ./public/styles.css --minify",
+    "predeploy": "tailwindcss -i ./src/styles/tailwind.css -o ./public/styles.css --minify",
+    "deploy": "gh-pages -d public",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Rodrigo Goitia <rodrigojgq@gmail.com>",
   "license": "MIT",
   "devDependencies": {
+    "gh-pages": "^4.0.0",
     "tailwindcss": "^3.1.6"
   }
 }
