@@ -564,8 +564,6 @@ video {
   max-width: 500px;
   overflow: hidden;
   border-radius: 0.25rem;
-  --tw-bg-opacity: 1;
-  background-color: rgb(187 185 189 / var(--tw-bg-opacity));
 }
 
 @media (min-width: 640px) {
@@ -586,8 +584,6 @@ video {
 .small-card__image-container {
   aspect-ratio: 3 / 4;
   width: 6rem;
-  --tw-bg-opacity: 1;
-  background-color: rgb(187 185 189 / var(--tw-bg-opacity));
 }
 
 @media (min-width: 640px) {
@@ -765,14 +761,35 @@ video {
   background-color: transparent;
 }
 
-.bg-grey {
-  --tw-bg-opacity: 1;
-  background-color: rgb(187 185 189 / var(--tw-bg-opacity));
-}
-
 .bg-primary {
   --tw-bg-opacity: 1;
   background-color: rgb(119 67 159 / var(--tw-bg-opacity));
+}
+
+.bg-background-dark {
+  --tw-bg-opacity: 1;
+  background-color: rgb(31 10 52 / var(--tw-bg-opacity));
+}
+
+.bg-hero {
+  background-image: url('/public/assets/hero.jpg');
+}
+
+.bg-cover {
+  background-size: cover;
+}
+
+.bg-center {
+  background-position: center;
+}
+
+.bg-no-repeat {
+  background-repeat: no-repeat;
+}
+
+.object-contain {
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .p-3 {
@@ -874,14 +891,14 @@ video {
 .image {
   height: 100%;
   width: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .card__bg {
   position: relative;
-  bottom: 50%;
-  height: 50%;
+  bottom: 66.666667%;
+  height: 66.666667%;
   width: 100%;
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
   --tw-gradient-from: transparent;
@@ -894,7 +911,7 @@ video {
 .card__text {
   position: relative;
   left: 1rem;
-  bottom: 66.666667%;
+  top: -160px;
   font-size: 1.125rem;
   line-height: 1.75rem;
   --tw-text-opacity: 1;
@@ -904,6 +921,7 @@ video {
 @media (min-width: 640px) {
   .card__text {
     left: 2rem;
+    top: -290px;
     font-size: 1.25rem;
     line-height: 1.75rem;
   }
@@ -911,6 +929,7 @@ video {
 
 @media (min-width: 1024px) {
   .card__text {
+    top: 0px;
     font-size: 1.5rem;
     line-height: 2rem;
   }
@@ -928,6 +947,8 @@ video {
   border-width: 2px;
   --tw-border-opacity: 1;
   border-color: rgb(119 67 159 / var(--tw-border-opacity));
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 .small-card:hover {
@@ -1018,6 +1039,47 @@ video {
   }
 }
 
+.before\:absolute::before {
+  content: var(--tw-content);
+  position: absolute;
+}
+
+.before\:z-0::before {
+  content: var(--tw-content);
+  z-index: 0;
+}
+
+.before\:aspect-3\/4::before {
+  content: var(--tw-content);
+  aspect-ratio: 3 / 4;
+}
+
+.before\:max-h-\[38rem\]::before {
+  content: var(--tw-content);
+  max-height: 38rem;
+}
+
+.before\:w-full::before {
+  content: var(--tw-content);
+  width: 100%;
+}
+
+.before\:bg-black::before {
+  content: var(--tw-content);
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
+.before\:opacity-30::before {
+  content: var(--tw-content);
+  opacity: 0.3;
+}
+
+.before\:content-\[\'\'\]::before {
+  --tw-content: '';
+  content: var(--tw-content);
+}
+
 .hover\:scale-110:hover {
   --tw-scale-x: 1.1;
   --tw-scale-y: 1.1;
@@ -1041,10 +1103,6 @@ video {
 .dark .dark\:bg-background-dark {
   --tw-bg-opacity: 1;
   background-color: rgb(31 10 52 / var(--tw-bg-opacity));
-}
-
-.dark .dark\:bg-transparent {
-  background-color: transparent;
 }
 
 .dark .dark\:bg-white {
@@ -1142,6 +1200,18 @@ video {
 
   .lg\:top-0 {
     top: 0px;
+  }
+
+  .lg\:-top-\[22rem\] {
+    top: -22rem;
+  }
+
+  .lg\:-top-\[32rem\] {
+    top: -32rem;
+  }
+
+  .lg\:-top-48 {
+    top: -12rem;
   }
 
   .lg\:col-span-2 {

@@ -2,11 +2,11 @@
 @tailwind components;
 
 .card {
-  @apply w-4/5 aspect-4/3 rounded bg-grey overflow-hidden max-w-[500px] sm:rounded-lg lg:rounded-2xl lg:w-full lg:h-full lg:max-w-full
+  @apply w-4/5 aspect-4/3 rounded overflow-hidden max-w-[500px] sm:rounded-lg lg:rounded-2xl lg:w-full lg:h-full lg:max-w-full
 }
 
 .small-card__image-container {
-  @apply w-24 aspect-3/4 bg-grey sm:w-28
+  @apply w-24 aspect-3/4 sm:w-28
 }
 
 @tailwind utilities;
@@ -16,18 +16,18 @@
 }
 
 .image {
-  @apply w-full h-full object-contain
+  @apply w-full h-full object-cover
 }
 
 .card__bg {
-  @apply w-full h-1/2 opacity-40 bg-gradient-to-b from-transparent to-black relative bottom-1/2
+  @apply w-full h-2/3 opacity-40 bg-gradient-to-b from-transparent to-black relative bottom-2/3
 }
 .card__text {
-  @apply text-white text-lg relative left-4 bottom-2/3 sm:text-xl sm:left-8 lg:text-2xl
+  @apply text-white text-lg relative left-4 -top-[160px] sm:text-xl sm:left-8 sm:-top-[290px] lg:text-2xl lg:top-0
 }
 
 .small-card {
- @apply w-40 h-56 rounded border-primary border-2 flex flex-col justify-center items-center gap-5 sm:w-44 sm:h-60 sm:rounded-lg lg:rounded-2xl lg:w-48 lg:h-64 hover:-translate-y-4 hover:duration-200 hover:ease-in-out
+ @apply w-40 h-56 px-6 rounded border-primary border-2 flex flex-col justify-center items-center gap-5 sm:w-44 sm:h-60 sm:rounded-lg lg:rounded-2xl lg:w-48 lg:h-64 hover:-translate-y-4 hover:duration-200 hover:ease-in-out
 }
 
 .small-card:nth-child(2n) {

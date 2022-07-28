@@ -9,9 +9,8 @@ module.exports = {
         secondary: "#00A3A3",
         "primary-dark": "#B174F0",
         "secondary-dark": "#00CABC",
-        grey: "#BBB9BD",
-        white: "#EDEDED",
         "background-dark": "#1F0A34",
+        white: "#EDEDED",
         black: "#000000",
       },
       fontFamily: {
@@ -20,6 +19,9 @@ module.exports = {
       aspectRatio: {
         "3/4": "3 / 4",
         "4/3": "4 / 3",
+      },
+      backgroundImage: {
+        hero: "url('/public/assets/hero.jpg')",
       },
     },
   },
