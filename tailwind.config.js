@@ -21,7 +21,7 @@ module.exports = {
         "4/3": "4 / 3",
       },
       backgroundImage: {
-        hero: "url('/public/assets/hero.jpg')",
+        hero: "url('/assets/hero.jpg')",
       },
     },
   },

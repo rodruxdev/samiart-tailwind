@@ -23,7 +23,7 @@
   @apply w-full h-2/3 opacity-40 bg-gradient-to-b from-transparent to-black relative bottom-2/3
 }
 .card__text {
-  @apply text-white text-lg relative left-4 -top-[160px] sm:text-xl sm:left-8 sm:-top-[290px] lg:text-2xl lg:top-0
+  @apply text-white text-lg relative left-4 bottom-[80%] sm:text-xl sm:left-8 sm:-top-[290px] lg:text-2xl lg:top-0
 }
 
 .small-card {
