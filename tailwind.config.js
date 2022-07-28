@@ -16,6 +16,10 @@ module.exports = {
       fontFamily: {
         sans: ["El Messiri", "sans-serif"],
       },
+      aspectRatio: {
+        "3/4": "3 / 4",
+        "4/3": "4 / 3",
+      },
     },
   },
   plugins: [],

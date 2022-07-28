@@ -1,3 +1,47 @@
 @tailwind base;
 @tailwind components;
+
+.card {
+  @apply w-4/5 aspect-4/3 rounded bg-grey overflow-hidden
+}
+
+.small-card__image-container {
+  @apply w-24 aspect-3/4 bg-grey
+}
+
 @tailwind utilities;
+
+.subtitle {
+  @apply text-xl text-primary mb-4 ml-4
+}
+
+.image {
+  @apply w-full h-full object-contain
+}
+
+.card__bg {
+  @apply w-full h-1/2 opacity-40 bg-gradient-to-b from-transparent to-black relative bottom-1/2
+}
+.card__text {
+  @apply text-white text-lg relative left-4 bottom-2/3
+}
+
+.small-card {
+ @apply w-40 h-56 rounded border-primary border-2 flex flex-col justify-center items-center gap-5
+}
+
+.small-card:nth-child(2n) {
+  @apply border-secondary
+}
+
+.paragraph {
+  @apply text-sm text-black
+}
+
+.social-button {
+  @apply w-14 h-14 bg-primary rounded grid place-items-center
+}
+
+.menu-button {
+  @apply w-10 h-10 bg-transparent grid place-items-center
+}
