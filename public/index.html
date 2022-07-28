@@ -12,31 +12,38 @@
   <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600&family=El+Messiri:wght@600;700&display=swap" rel="stylesheet">
 </head>
 <body class="w-screen h-full font-sans bg-white">
-  <header class="w-full h-auto bg-transparent relative p-3 z-10">
-    <div class="w-24 h-12 bg-white px-1 pb-1">
+  <header class="w-full h-auto bg-transparent relative p-3 z-10 lg:py-5 lg:px-10 lg:bg-white lg:flex lg:justify-between lg:sticky lg:top-0">
+    <div class="w-24 h-12 bg-white px-1 pb-1 lg:w-36 lg:h-16">
       <img src="/" alt="Logo SamiArt">
     </div>
-    <div class="hidden">
+    <div class="hidden lg:w-max lg:flex lg:justify-center lg:items-center lg:gap-10">
+      <a href="#methods" class="text-lg underline">Carrito</a>
+      <a href="#products" class="text-lg underline">Mi Perfil</a>
+      <button class="w-8 h-8 grid place-items-center">
+        <svg class="w-full h-full" width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M34.9444 30.2111C34.8454 30.006 34.6856 29.8363 34.4869 29.725C34.2881 29.6137 34.06 29.5662 33.8333 29.5889H32.8889C30.1241 29.5135 27.4665 28.5026 25.3506 26.7214C23.2347 24.9402 21.7855 22.4939 21.2398 19.7824C20.6942 17.0709 21.0843 14.2545 22.3466 11.7935C23.6088 9.33241 25.6684 7.37225 28.1889 6.23331C28.4043 6.14289 28.5858 5.98686 28.7075 5.78738C28.8292 5.58791 28.8849 5.35515 28.8667 5.1222C28.859 4.89825 28.7838 4.68185 28.651 4.50141C28.5181 4.32096 28.3338 4.1849 28.1222 4.11109C26.3404 3.46921 24.4606 3.14212 22.5667 3.14442C18.111 3.14442 13.8379 4.91442 10.6873 8.06503C7.53666 11.2156 5.76666 15.4888 5.76666 19.9444C5.76666 24.4001 7.53666 28.6732 10.6873 31.8238C13.8379 34.9744 18.111 36.7444 22.5667 36.7444C24.8644 36.7582 27.1395 36.2897 29.2449 35.3691C31.3502 34.4485 33.2389 33.0963 34.7889 31.4C34.9258 31.2374 35.0132 31.039 35.0408 30.8283C35.0684 30.6176 35.0349 30.4034 34.9444 30.2111ZM22.6 34.5778C18.7337 34.5778 15.0258 33.0419 12.292 30.308C9.55809 27.5742 8.02222 23.8662 8.02222 20C8.02222 16.1337 9.55809 12.4258 12.292 9.69193C15.0258 6.95807 18.7337 5.4222 22.6 5.4222C23.3444 5.41832 24.0879 5.47779 24.8222 5.59998C22.4421 7.26752 20.6204 9.61423 19.595 12.3335C18.5696 15.0527 18.3884 18.018 19.0748 20.8419C19.7613 23.6657 21.2836 26.2169 23.4428 28.162C25.6021 30.107 28.2978 31.3556 31.1778 31.7444C28.7043 33.5996 25.6918 34.5947 22.6 34.5778Z" fill="#00A3A3"/>
+        </svg>
+      </button>
     </div>
   </header>
-  <main class="w-full relative -top-20">
+  <main class="w-full relative -top-20 lg:static">
     <section class="w-full aspect-3/4 max-h-[38rem]" id="hero">
-      <div class="w-full h-full bg-grey flex justify-center flex-col items-center gap-2 sm:gap-4">
-        <h1 class="text-2xl text-center sm:text-3xl">SAMIART</h1>
-        <h2 class="text-xl text-center sm:text-2xl">Manos que dan vida al arte</h2>
-        <button class="px-8 py-3 bg-primary text-white rounded sm:px-12 sm:py-4 sm:text-lg sm:rounded-lg">GALERIA</button>
+      <div class="w-full h-full bg-grey flex justify-center flex-col items-center gap-2 sm:gap-4 lg:gap-8">
+        <h1 class="text-2xl text-center sm:text-3xl lg:text-4xl">SAMIART</h1>
+        <h2 class="text-xl text-center sm:text-2xl lg:text-3xl">Manos que dan vida al arte</h2>
+        <button class="px-8 py-3 bg-primary text-white rounded sm:px-12 sm:py-4 sm:text-lg sm:rounded-lg lg:px-16 lg:text-2xl">GALERIA</button>
       </div>
     </section>
-    <section class="my-6" id="methods">
+    <section class="my-6 max-w-[1400px] mx-auto sm:my-8 lg:my-10" id="methods">
       <h2 class="subtitle">Técnicas de Pintura</h2>
-      <div class="w-full flex flex-col justify-center items-center gap-5">
-        <div class="card">
+      <div class="w-full flex flex-col justify-center items-center gap-5 lg:h-[720px] lg:p-5 lg:flex-wrap lg:grid lg:grid-cols-3 lg:grid-rows-3 lg:gap-y-3 lg:gap-x-4">
+        <div class="card lg:col-span-2 lg:row-span-2">
           <img src="/" alt="Painting" class="image">
           <div class="card__bg">
           </div>
           <p class="card__text">Pintura Realista</p>
         </div>
-        <div class="card">
+        <div class="card lg:col-span-1 lg:row-span-3">
           <img src="/" alt="Painting" class="image">
           <div class="card__bg">
           </div>
@@ -56,10 +63,19 @@
         </div>
       </div>
     </section>
-    <section class="my-6" id="products">
+    <section class="my-6 max-w-[1400px] mx-auto sm:my-8 lg:my-10" id="products">
       <h2 class="subtitle">Paquetes y Cuadros</h2>
-      <div class="w-full h-auto overflow-x-scroll gap-4 p-4">
-        <div class="w-max h-auto flex justify-center items-center gap-4">
+      <div class="w-full h-auto mx-auto flex-none overflow-x-scroll gap-4 p-4 sm:max-w-[976px] lg:overflow-x-auto lg:max-w-[1344px]">
+        <div class="w-max h-auto flex justify-center items-center gap-4 lg:gap-8">
+          <article class="small-card">
+            <div class="small-card__image-container ">
+              <img src="/" alt="Pincel" class="image">
+            </div>
+            <div>
+              <p class="paragraph">Paquete Navideño</p>
+              <p class="paragraph">100 Bs</p>
+            </div>
+          </article>
           <article class="small-card">
             <div class="small-card__image-container">
               <img src="/" alt="Pincel" class="image">
@@ -110,7 +126,7 @@
 
     </section>
   </main>
-  <footer class="w-full h-auto relative -top-20 pb-5 flex flex-col gap-3 justify-center items-center sm:flex-row sm:justify-between sm:px-5">
+  <footer class="w-full h-auto relative -top-20 pb-5 flex flex-col gap-3 justify-center items-center sm:flex-row sm:justify-between sm:px-5 lg:static">
     <div class="w-60 h-32 bg-grey">
       <img src="/" alt="Logo SamiArt" class="image">
     </div>
@@ -146,7 +162,7 @@
       </a>
     </div>
   </footer>
-  <div class="w-full h-20 px-8 fixed bottom-0 flex justify-around items-center bg-grey sm:justify-center sm:gap-20">
+  <div class="w-full h-20 px-8 fixed bottom-0 flex justify-around items-center bg-grey sm:justify-center sm:gap-20 lg:hidden">
     <a href="#hero" class="menu-button">
       <svg class="sm:w-12 sm:h-12" width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M37.4727 19.7265L21.3828 3.64841C21.267 3.53233 21.1294 3.44024 20.9779 3.3774C20.8264 3.31457 20.664 3.28223 20.5 3.28223C20.336 3.28223 20.1736 3.31457 20.0221 3.3774C19.8706 3.44024 19.733 3.53233 19.6172 3.64841L3.52734 19.7265C3.05859 20.1953 2.79297 20.832 2.79297 21.4961C2.79297 22.875 3.91406 23.9961 5.29297 23.9961H6.98828V35.4687C6.98828 36.1601 7.54688 36.7187 8.23828 36.7187H18V27.9687H22.375V36.7187H32.7617C33.4531 36.7187 34.0117 36.1601 34.0117 35.4687V23.9961H35.707C36.3711 23.9961 37.0078 23.7343 37.4766 23.2617C38.4492 22.2851 38.4492 20.7031 37.4727 19.7265Z" fill="#77439F"/>

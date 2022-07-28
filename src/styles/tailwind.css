@@ -2,7 +2,7 @@
 @tailwind components;
 
 .card {
-  @apply w-4/5 aspect-4/3 rounded bg-grey overflow-hidden  max-w-[500px]
+  @apply w-4/5 aspect-4/3 rounded bg-grey overflow-hidden max-w-[500px] sm:rounded-lg lg:rounded-2xl lg:w-full lg:h-full lg:max-w-full
 }
 
 .small-card__image-container {
@@ -12,7 +12,7 @@
 @tailwind utilities;
 
 .subtitle {
-  @apply text-xl text-primary mb-4 ml-4  sm:text-2xl
+  @apply text-xl text-primary mb-4 ml-4 sm:text-2xl lg:text-3xl
 }
 
 .image {
@@ -23,11 +23,11 @@
   @apply w-full h-1/2 opacity-40 bg-gradient-to-b from-transparent to-black relative bottom-1/2
 }
 .card__text {
-  @apply text-white text-lg relative left-4 bottom-2/3  sm:text-xl sm:left-8
+  @apply text-white text-lg relative left-4 bottom-2/3 sm:text-xl sm:left-8 lg:text-2xl
 }
 
 .small-card {
- @apply w-40 h-56 rounded border-primary border-2 flex flex-col justify-center items-center gap-5  sm:w-44 sm:h-60
+ @apply w-40 h-56 rounded border-primary border-2 flex flex-col justify-center items-center gap-5 sm:w-44 sm:h-60 sm:rounded-lg lg:rounded-2xl lg:w-48 lg:h-64
 }
 
 .small-card:nth-child(2n) {
@@ -35,7 +35,7 @@
 }
 
 .paragraph {
-  @apply text-sm text-black  sm:text-base
+  @apply text-sm text-black sm:text-base
 }
 
 .social-button {
