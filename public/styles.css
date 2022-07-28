@@ -561,6 +561,7 @@ video {
 .card {
   aspect-ratio: 4 / 3;
   width: 80%;
+  max-width: 500px;
   overflow: hidden;
   border-radius: 0.25rem;
   --tw-bg-opacity: 1;
@@ -572,6 +573,12 @@ video {
   width: 6rem;
   --tw-bg-opacity: 1;
   background-color: rgb(187 185 189 / var(--tw-bg-opacity));
+}
+
+@media (min-width: 640px) {
+  .small-card__image-container {
+    width: 7rem;
+  }
 }
 
 .fixed {
@@ -603,6 +610,10 @@ video {
   display: flex;
 }
 
+.hidden {
+  display: none;
+}
+
 .aspect-3\/4 {
   aspect-ratio: 3 / 4;
 }
@@ -625,6 +636,10 @@ video {
 
 .h-20 {
   height: 5rem;
+}
+
+.max-h-\[38rem\] {
+  max-height: 38rem;
 }
 
 .w-screen {
@@ -687,6 +702,10 @@ video {
 
 .overflow-x-scroll {
   overflow-x: scroll;
+}
+
+.scroll-smooth {
+  scroll-behavior: smooth;
 }
 
 .rounded {
@@ -775,6 +794,13 @@ video {
   color: rgb(119 67 159 / var(--tw-text-opacity));
 }
 
+@media (min-width: 640px) {
+  .subtitle {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+
 .image {
   height: 100%;
   width: 100%;
@@ -805,6 +831,14 @@ video {
   color: rgb(237 237 237 / var(--tw-text-opacity));
 }
 
+@media (min-width: 640px) {
+  .card__text {
+    left: 2rem;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+}
+
 .small-card {
   display: flex;
   height: 14rem;
@@ -819,6 +853,13 @@ video {
   border-color: rgb(119 67 159 / var(--tw-border-opacity));
 }
 
+@media (min-width: 640px) {
+  .small-card {
+    height: 15rem;
+    width: 11rem;
+  }
+}
+
 .small-card:nth-child(2n) {
   --tw-border-opacity: 1;
   border-color: rgb(0 163 163 / var(--tw-border-opacity));
@@ -831,6 +872,13 @@ video {
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
+@media (min-width: 640px) {
+  .paragraph {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+
 .social-button {
   display: grid;
   height: 3.5rem;
@@ -841,10 +889,87 @@ video {
   background-color: rgb(119 67 159 / var(--tw-bg-opacity));
 }
 
+@media (min-width: 640px) {
+  .social-button {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 0.5rem;
+  }
+}
+
 .menu-button {
   display: grid;
   height: 2.5rem;
   width: 2.5rem;
   place-items: center;
   background-color: transparent;
+}
+
+@media (min-width: 640px) {
+  .menu-button {
+    height: 3.5rem;
+    width: 3.5rem;
+  }
+
+  .sm\:h-12 {
+    height: 3rem;
+  }
+
+  .sm\:w-12 {
+    width: 3rem;
+  }
+
+  .sm\:flex-row {
+    flex-direction: row;
+  }
+
+  .sm\:justify-center {
+    justify-content: center;
+  }
+
+  .sm\:justify-between {
+    justify-content: space-between;
+  }
+
+  .sm\:gap-4 {
+    gap: 1rem;
+  }
+
+  .sm\:gap-20 {
+    gap: 5rem;
+  }
+
+  .sm\:rounded-lg {
+    border-radius: 0.5rem;
+  }
+
+  .sm\:px-12 {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .sm\:py-4 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .sm\:px-5 {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  .sm\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  .sm\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .sm\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
 }
